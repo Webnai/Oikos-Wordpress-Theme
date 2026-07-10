@@ -1,0 +1,10 @@
+.oikos-section {
+  @include section-card;
+
+  transition: box-shadow 260ms ease, transform 260ms ease;
+
+  &:hover {
+    box-shadow: $shadow-lift;
+    transform: translateY(-4px);
+  }
+}

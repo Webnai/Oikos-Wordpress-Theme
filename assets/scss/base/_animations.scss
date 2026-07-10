@@ -1,0 +1,21 @@
+.oikos-animate,
+.oikos-section,
+.oikos-image-reveal,
+[data-animate] {
+  opacity: 0;
+  transform: translate3d(0, 26px, 0) scale(0.98);
+  will-change: opacity, transform;
+
+  @include motion-ease;
+
+  &.is-visible {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+
+  &.is-exiting {
+    opacity: 0;
+    transform: translate3d(0, -14px, 0) scale(0.98);
+    filter: saturate(0.9);
+  }
+}

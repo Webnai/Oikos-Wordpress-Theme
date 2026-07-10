@@ -1,0 +1,361 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+    "appearanceTools": true,
+    "layout": {
+      "contentSize": "760px",
+      "wideSize": "1240px"
+    },
+    "color": {
+      "defaultPalette": false,
+      "defaultGradients": false,
+      "palette": [
+        {
+          "slug": "sand-100",
+          "name": "Sand 100",
+          "color": "#FDFCF9"
+        },
+        {
+          "slug": "sand-200",
+          "name": "Sand 200",
+          "color": "#F9F6EE"
+        },
+        {
+          "slug": "sand-300",
+          "name": "Sand 300",
+          "color": "#F7F3EA"
+        },
+        {
+          "slug": "sand-400",
+          "name": "Sand 400",
+          "color": "#EDF2EE"
+        },
+        {
+          "slug": "clay-500",
+          "name": "Clay 500",
+          "color": "#CFC1A7"
+        },
+        {
+          "slug": "clay-600",
+          "name": "Clay 600",
+          "color": "#C3B091"
+        },
+        {
+          "slug": "harbor-600",
+          "name": "Harbor 600",
+          "color": "#718BA0"
+        },
+        {
+          "slug": "harbor-700",
+          "name": "Harbor 700",
+          "color": "#4E6E88"
+        },
+        {
+          "slug": "leaf-500",
+          "name": "Leaf 500",
+          "color": "#A3C1AD"
+        },
+        {
+          "slug": "leaf-400",
+          "name": "Leaf 400",
+          "color": "#B5CDBE"
+        },
+        {
+          "slug": "harbor-200",
+          "name": "Harbor 200",
+          "color": "#CAD5DB"
+        },
+        {
+          "slug": "leaf-200",
+          "name": "Leaf 200",
+          "color": "#E3ECE6"
+        }
+      ],
+      "gradients": [
+        {
+          "slug": "coastal-fade",
+          "name": "Coastal Fade",
+          "gradient": "linear-gradient(125deg, #FDFCF9 0%, #E3ECE6 45%, #CAD5DB 100%)"
+        },
+        {
+          "slug": "earth-band",
+          "name": "Earth Band",
+          "gradient": "linear-gradient(140deg, #F9F6EE 0%, #CFC1A7 50%, #718BA0 100%)"
+        }
+      ]
+    },
+    "spacing": {
+      "defaultSpacingSizes": false,
+      "spacingSizes": [
+        {
+          "slug": "3xs",
+          "name": "3XS",
+          "size": "0.25rem"
+        },
+        {
+          "slug": "2xs",
+          "name": "2XS",
+          "size": "0.5rem"
+        },
+        {
+          "slug": "xs",
+          "name": "XS",
+          "size": "0.75rem"
+        },
+        {
+          "slug": "sm",
+          "name": "SM",
+          "size": "1rem"
+        },
+        {
+          "slug": "md",
+          "name": "MD",
+          "size": "1.5rem"
+        },
+        {
+          "slug": "lg",
+          "name": "LG",
+          "size": "2rem"
+        },
+        {
+          "slug": "xl",
+          "name": "XL",
+          "size": "3rem"
+        },
+        {
+          "slug": "2xl",
+          "name": "2XL",
+          "size": "4rem"
+        },
+        {
+          "slug": "3xl",
+          "name": "3XL",
+          "size": "6rem"
+        }
+      ],
+      "units": ["px", "%", "em", "rem", "vw", "vh"]
+    },
+    "typography": {
+      "defaultFontSizes": false,
+      "fluid": true,
+      "dropCap": false,
+      "fontFamilies": [
+        {
+          "fontFamily": "\"Nunito Sans\", sans-serif",
+          "name": "Nunito Sans",
+          "slug": "nunito-sans",
+          "fontFace": [
+            {
+              "fontFamily": "Nunito Sans",
+              "fontStyle": "normal",
+              "fontWeight": "300 900",
+              "src": [
+                "file:./assets/fonts/NunitoSans-Variable.ttf"
+              ]
+            },
+            {
+              "fontFamily": "Nunito Sans",
+              "fontStyle": "italic",
+              "fontWeight": "300 900",
+              "src": [
+                "file:./assets/fonts/NunitoSans-Italic-Variable.ttf"
+              ]
+            }
+          ]
+        },
+        {
+          "fontFamily": "\"Arial MT\", \"Arial\", sans-serif",
+          "name": "Arial Mount BT Bold",
+          "slug": "arial-mount-bt"
+        }
+      ],
+      "fontSizes": [
+        {
+          "slug": "xs",
+          "size": "0.875rem",
+          "name": "XS"
+        },
+        {
+          "slug": "sm",
+          "size": "1rem",
+          "name": "SM"
+        },
+        {
+          "slug": "md",
+          "size": "1.125rem",
+          "name": "MD"
+        },
+        {
+          "slug": "lg",
+          "size": "1.375rem",
+          "name": "LG"
+        },
+        {
+          "slug": "xl",
+          "size": "1.75rem",
+          "name": "XL"
+        },
+        {
+          "slug": "2xl",
+          "size": "2.25rem",
+          "name": "2XL"
+        },
+        {
+          "slug": "3xl",
+          "size": "3rem",
+          "name": "3XL"
+        },
+        {
+          "slug": "4xl",
+          "size": "4rem",
+          "name": "4XL"
+        }
+      ],
+      "fontStyle": true,
+      "fontWeight": true,
+      "lineHeight": true,
+      "letterSpacing": true,
+      "textTransform": true,
+      "textDecoration": true
+    },
+    "blocks": {
+      "core/button": {
+        "border": {
+          "radius": true
+        },
+        "color": {
+          "background": true,
+          "text": true
+        },
+        "typography": {
+          "fontSize": true,
+          "fontWeight": true,
+          "textTransform": true,
+          "letterSpacing": true
+        }
+      },
+      "core/group": {
+        "spacing": {
+          "padding": true,
+          "margin": true,
+          "blockGap": true
+        }
+      },
+      "core/image": {
+        "border": {
+          "radius": true
+        }
+      }
+    }
+  },
+  "styles": {
+    "css": ":root { --oikos-surface: var(--wp--preset--color--sand-100); --oikos-ink: #1f2f38; --oikos-shadow: 0 14px 40px rgba(31, 47, 56, 0.14); }",
+    "color": {
+      "background": "var(--wp--preset--color--sand-100)",
+      "text": "var(--oikos-ink)"
+    },
+    "typography": {
+      "fontFamily": "var(--wp--preset--font-family--nunito-sans)",
+      "lineHeight": "1.65"
+    },
+    "elements": {
+      "heading": {
+        "color": {
+          "text": "var(--wp--preset--color--harbor-700)"
+        },
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--arial-mount-bt)",
+          "fontWeight": "700",
+          "lineHeight": "1.15"
+        }
+      },
+      "link": {
+        "color": {
+          "text": "var(--wp--preset--color--harbor-700)"
+        },
+        ":hover": {
+          "color": {
+            "text": "var(--wp--preset--color--leaf-500)"
+          }
+        }
+      },
+      "button": {
+        "color": {
+          "background": "var(--wp--preset--color--harbor-700)",
+          "text": "#ffffff"
+        },
+        "border": {
+          "radius": "999px"
+        },
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--nunito-sans)",
+          "fontSize": "1rem",
+          "fontWeight": "700",
+          "textTransform": "uppercase",
+          "letterSpacing": "0.08em"
+        },
+        "spacing": {
+          "padding": {
+            "top": "0.85rem",
+            "right": "1.5rem",
+            "bottom": "0.85rem",
+            "left": "1.5rem"
+          }
+        }
+      }
+    },
+    "blocks": {
+      "core/group": {
+        "spacing": {
+          "padding": {
+            "top": "var(--wp--preset--spacing--xl)",
+            "bottom": "var(--wp--preset--spacing--xl)",
+            "left": "var(--wp--preset--spacing--lg)",
+            "right": "var(--wp--preset--spacing--lg)"
+          }
+        }
+      },
+      "core/post-title": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--arial-mount-bt)",
+          "fontWeight": "700"
+        }
+      },
+      "core/site-title": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--arial-mount-bt)",
+          "fontWeight": "700",
+          "fontSize": "clamp(1.3rem, 1vw + 1.1rem, 2rem)"
+        }
+      },
+      "core/navigation": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--nunito-sans)",
+          "fontSize": "1rem",
+          "fontWeight": "600",
+          "letterSpacing": "0.04em"
+        }
+      }
+    }
+  },
+  "templateParts": [
+    {
+      "name": "header",
+      "title": "Site Header",
+      "area": "header"
+    },
+    {
+      "name": "footer",
+      "title": "Site Footer",
+      "area": "footer"
+    }
+  ],
+  "customTemplates": [
+    {
+      "name": "landing",
+      "title": "Landing",
+      "postTypes": ["page"]
+    }
+  ]
+}

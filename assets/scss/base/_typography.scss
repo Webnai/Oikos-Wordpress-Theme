@@ -1,0 +1,15 @@
+body {
+  color: $ink;
+  font-family: $font-body;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $harbor-700;
+  font-family: $font-heading;
+  letter-spacing: -0.02em;
+}

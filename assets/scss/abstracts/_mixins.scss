@@ -1,0 +1,8 @@
+@mixin motion-ease($duration: 640ms) {
+  transition: opacity $duration ease, transform $duration cubic-bezier(0.2, 0.75, 0.2, 1), filter 420ms ease;
+}
+
+@mixin section-card {
+  border-radius: 28px;
+  box-shadow: $shadow-soft;
+}
