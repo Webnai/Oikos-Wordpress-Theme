@@ -1,3 +1,13 @@
+@use 'abstracts/variables';
+@use 'abstracts/mixins';
+@use 'base/reset';
+@use 'base/typography';
+@use 'base/animations';
+@use 'components/buttons';
+@use 'components/sections';
+@use 'components/images';
+@use 'components/footer';
+
 @font-face {
 	font-family: 'Nunito Sans';
 	src: url('../fonts/NunitoSans-Variable.ttf') format('truetype');
@@ -14,10 +24,6 @@
 	font-display: swap;
 }
 
-@import 'abstracts/variables';
-@import 'abstracts/mixins';
-@import 'base/reset';
-@import 'base/typography';
-@import 'base/animations';
-@import 'components/sections';
-@import 'components/images';
+.intro-image {
+  border-radius: 120px 120px 40px 40px;
+}

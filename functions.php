@@ -48,6 +48,28 @@ function oikos_enqueue_editor_assets() {
 add_action( 'enqueue_block_editor_assets', 'oikos_enqueue_editor_assets' );
 
 /**
+ * Register button style variations.
+ */
+function oikos_register_block_styles() {
+	register_block_style(
+		'core/button',
+		array(
+			'name'  => 'primary-btn',
+			'label' => __( 'Primary Button', 'oikos' ),
+		)
+	);
+
+	register_block_style(
+		'core/button',
+		array(
+			'name'  => 'secondary-btn',
+			'label' => __( 'Secondary Button', 'oikos' ),
+		)
+	);
+}
+add_action( 'init', 'oikos_register_block_styles' );
+
+/**
  * Register block pattern categories.
  */
 function oikos_register_pattern_categories() {

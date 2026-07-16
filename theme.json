@@ -5,7 +5,7 @@
     "appearanceTools": true,
     "layout": {
       "contentSize": "760px",
-      "wideSize": "1240px"
+      "wideSize": "1340px"
     },
     "color": {
       "defaultPalette": false,
@@ -250,7 +250,7 @@
     }
   },
   "styles": {
-    "css": ":root { --oikos-surface: var(--wp--preset--color--sand-100); --oikos-ink: #1f2f38; --oikos-shadow: 0 14px 40px rgba(31, 47, 56, 0.14); }",
+    "css": ":root { --oikos-surface: var(--wp--preset--color--sand-100); --oikos-ink: #43474F; --oikos-shadow: 0 14px 40px rgba(31, 47, 56, 0.14); }",
     "color": {
       "background": "var(--wp--preset--color--sand-100)",
       "text": "var(--oikos-ink)"

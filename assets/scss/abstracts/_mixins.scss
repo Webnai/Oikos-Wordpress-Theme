@@ -1,3 +1,5 @@
+@use 'variables' as *;
+
 @mixin motion-ease($duration: 640ms) {
   transition: opacity $duration ease, transform $duration cubic-bezier(0.2, 0.75, 0.2, 1), filter 420ms ease;
 }
