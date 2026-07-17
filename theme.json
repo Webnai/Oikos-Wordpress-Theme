@@ -52,6 +52,11 @@
           "color": "#4E6E88"
         },
         {
+          "slug": "harbor-800",
+          "name": "Harbor 800",
+          "color": "#365770"
+        },
+        {
           "slug": "leaf-500",
           "name": "Leaf 500",
           "color": "#A3C1AD"
