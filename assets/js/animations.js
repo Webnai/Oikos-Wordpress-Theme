@@ -1,13 +1,17 @@
 (function () {
-  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-  if (prefersReducedMotion) {
-    return;
-  }
-
   const animatedElements = document.querySelectorAll(
     '.oikos-animate, .oikos-section, .oikos-image-reveal, [data-animate]'
   );
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (prefersReducedMotion) {
+    animatedElements.forEach((element) => {
+      element.classList.add('is-visible');
+      element.classList.remove('is-exiting');
+    });
+
+    return;
+  }
 
   if (!animatedElements.length) {
     return;

@@ -118,6 +118,14 @@ h6 {
   transform: translateY(-4px);
 }
 
+.oikos-list {
+  text-align: center;
+}
+
+.bicycle-column {
+  max-height: 400px;
+}
+
 .oikos-image-reveal,
 [data-animate=image] {
   overflow: clip;
