@@ -1,10 +1,12 @@
-@use '../abstracts/mixins' as *;
-@use '../abstracts/variables' as *;
+@use "../abstracts/mixins" as *;
+@use "../abstracts/variables" as *;
 
 .oikos-section {
   @include section-card;
 
-  transition: box-shadow 260ms ease, transform 260ms ease;
+  transition:
+    box-shadow 260ms ease,
+    transform 260ms ease;
 
   &:hover {
     box-shadow: $shadow-lift;
@@ -17,5 +19,190 @@
 }
 
 .bicycle-column {
-  max-height: 400px;
+  height: 550px;
+  position: relative;
+}
+
+.bicycle-text p {
+  position: absolute;
+  min-width: 100%;
+  padding: 4rem 0;
+}
+
+.contact-column {
+  gap: 5.5rem;
+}
+
+.cf7-contact-form {
+  max-width: 1100px;
+  font-family: 'Nunito Sans';
+}
+
+.cf7-row {
+  margin-bottom: 1.75rem;
+}
+
+.cf7-row input,
+.cf7-row textarea {
+  width: 100%;
+  border: 1px solid #c4ccd7;
+  border-radius: 18px;
+  padding: 1.2rem 1.4rem;
+  font-size: 1.1rem;
+  color: #6b7280;
+  background: #fff;
+}
+
+.cf7-col p{
+  margin: 0;
+  padding: 0;
+}
+
+.cf7-row textarea {
+  height: 140px;
+  min-height: unset;
+}
+
+.cf7-row input::placeholder,
+.cf7-row textarea::placeholder {
+  color: #7a869a;
+  font-family: 'Nunito Sans';
+}
+
+.cf7-row input:focus,
+.cf7-row textarea:focus {
+  outline: none;
+  border-color: #3b5a77;
+}
+
+.cf7-row .wpcf7-submit {
+  width: auto;
+  font-family: 'Nunito Sans';
+  min-width: 250px;
+  background: #365774;
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 18px 42px;
+  font-size: 1.15rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cf7-row .wpcf7-submit:hover {
+  background: #2b4660;
+}
+
+.cf7-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1rem;
+  color: #4b5563;
+}
+
+.cf7-checkbox input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+}
+
+.cf7-checkbox a {
+  color: #365774;
+  text-decoration: underline;
+}
+
+.cf7-row .wpcf7-spinner {
+  margin-left: 15px;
+}
+
+@media (min-width: 768px) {
+  .cf7-row:first-child {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+.cf7-newsletter {
+    display: flex;
+    align-items: center;
+    background: #F4F4F2;
+    border-radius: 999px;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 760px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+    overflow: hidden;
+    gap: 0;
+}
+
+.cf7-newsletter .wpcf7-form-control-wrap {
+    flex: 1;
+}
+
+.cf7-newsletter input[type="email"] {
+    width: 100%;
+    border: none;
+    background: transparent;
+    padding: 24px 28px;
+    font-size: 1.15rem;
+    color: #64748B;
+    outline: none;
+    box-shadow: none;
+}
+
+.cf7-newsletter input[type="email"]::placeholder {
+    color: #6B7280;
+    opacity: 1;
+}
+
+.cf7-newsletter .wpcf7-submit {
+    background: #355E7C;
+    font-family: 'Nunito Sans';
+    color: #fff;
+    border: none;
+    border-radius: 999px;
+    padding: 22px 46px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    cursor: pointer;
+    min-width: 240px;
+    transition: background 0.25s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.18);
+}
+
+.cf7-newsletter .wpcf7-submit:hover {
+    background: #2C506B;
+}
+
+.cf7-newsletter .wpcf7-spinner {
+    display: none;
+}
+
+@media (max-width: 640px) {
+    .cf7-newsletter {
+        flex-direction: column;
+        border-radius: 32px;
+        padding: 10px;
+    }
+
+    .cf7-newsletter input[type="email"] {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .cf7-newsletter .wpcf7-submit {
+        width: 100%;
+        min-width: 100%;
+    }
+}
+
+.cf7-newsletter p {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adjust spacing as needed */
+  padding: 0;
+  margin: 0;
 }
