@@ -15,6 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 function oikos_enqueue_assets() {
 	$css_version = filemtime( get_theme_file_path( 'assets/css/main.css' ) );
 	$js_version  = filemtime( get_theme_file_path( 'assets/js/animations.js' ) );
+	$accordion_js = filemtime( get_theme_file_path( 'assets/js/accordionFix.js' ) );
 
 	wp_enqueue_style(
 		'oikos-main',
@@ -28,6 +29,14 @@ function oikos_enqueue_assets() {
 		get_theme_file_uri( 'assets/js/animations.js' ),
 		array(),
 		$js_version,
+		true
+	);
+
+	wp_enqueue_script(
+		'oikos-accordion-fix',
+		get_theme_file_uri( 'assets/js/accordionFix.js' ),
+		array(),
+		$accordion_js,
 		true
 	);
 }
