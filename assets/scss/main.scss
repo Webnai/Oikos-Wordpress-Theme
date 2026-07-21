@@ -23,3 +23,16 @@
 	font-weight: 300 900;
 	font-display: swap;
 }
+
+/* Hover */
+.menu-item .wp-block-navigation-item__content:hover > a {
+    color: #c2ae8f;
+}
+
+/* Active */
+.menu-item .wp-block-navigation-item__content.current-menu-item > a,
+.menu-items .wp-block-navigation-item__content.current_page_item > a,
+.menu-items .wp-block-navigation-item__content.current-menu-parent > a,
+.menu-items .wp-block-navigation-item__content.current-menu-ancestor > a {
+    color: #c2ae8f;
+}
