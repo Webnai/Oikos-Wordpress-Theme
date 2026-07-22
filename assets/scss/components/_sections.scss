@@ -146,7 +146,7 @@
     width: 100%;
     border: none;
     background: transparent;
-    padding: 24px 28px;
+    padding: 16px 22px;
     font-size: 1.15rem;
     color: #64748B;
     outline: none;
@@ -164,7 +164,7 @@
     color: #fff;
     border: none;
     border-radius: 999px;
-    padding: 22px 46px;
+    padding: 16px 22px;
     font-size: 1.2rem;
     font-weight: 400;
     cursor: pointer;
@@ -230,7 +230,10 @@
 
 .form-group {
     width: 100%;
-    margin-bottom: 24px;
+}
+
+.contact-form label {
+  margin-bottom: 4px;
 }
 
 .contact-form input:not([type="checkbox"]),
