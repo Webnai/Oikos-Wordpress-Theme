@@ -36,3 +36,14 @@
 .menu-items .wp-block-navigation-item__content.current-menu-ancestor > a {
     color: #c2ae8f;
 }
+
+@media (max-width: 768px) {
+	.contact-button{
+		display: none !important;
+	}
+
+	:root :where(.wp-block-group){
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+}
