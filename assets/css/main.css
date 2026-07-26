@@ -49,63 +49,20 @@ h6 {
   filter: saturate(0.9);
 }
 
-.primary-btn,
-.secondary-btn,
-.wp-block-button.is-style-primary-btn .wp-block-button__link,
-.wp-block-button.is-style-secondary-btn .wp-block-button__link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  border: 1px solid transparent;
-  border-radius: 999px;
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 1rem;
-  font-weight: 700;
-  line-height: 1;
-  text-decoration: none;
-  transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease, opacity 0.25s ease, transform 0.25s ease;
-}
-.primary-btn:hover, .primary-btn:focus-visible,
-.secondary-btn:hover,
-.secondary-btn:focus-visible,
-.wp-block-button.is-style-primary-btn .wp-block-button__link:hover,
-.wp-block-button.is-style-primary-btn .wp-block-button__link:focus-visible,
-.wp-block-button.is-style-secondary-btn .wp-block-button__link:hover,
-.wp-block-button.is-style-secondary-btn .wp-block-button__link:focus-visible {
-  background: var(--wp--preset--color--clay-600, #c3b091);
-  transform: translateY(-1px);
-}
-.primary-btn:focus-visible,
-.secondary-btn:focus-visible,
-.wp-block-button.is-style-primary-btn .wp-block-button__link:focus-visible,
-.wp-block-button.is-style-secondary-btn .wp-block-button__link:focus-visible {
-  outline: 2px solid #1f2f38;
-  outline-offset: 3px;
+/* Target the links inside both primary and secondary button wrappers */
+.primary-btn .wp-block-button__link:hover,
+.secondary-btn .wp-block-button__link:hover {
+  background-color: rgba(255, 255, 255, 0.3) !important;
+  /* Optional: Ensure the text remains visible if the background is light */
+  color: white;
+  border: 1px solid white;
+  transition: background-color 0.3s ease;
 }
 
-.primary-btn,
-.wp-block-button.is-style-primary-btn .wp-block-button__link {
-  background-color: var(--wp--preset--color--leaf-500, #b5cdbe);
-  color: white;
-}
-.primary-btn:hover, .primary-btn:focus-visible,
-.wp-block-button.is-style-primary-btn .wp-block-button__link:hover,
-.wp-block-button.is-style-primary-btn .wp-block-button__link:focus-visible {
-  background: var(--wp--preset--color--clay-600, #c3b091);
-  color: white;
-}
-
-.secondary-btn,
-.wp-block-button.is-style-secondary-btn .wp-block-button__link {
-  background-color: var(--wp--preset--color--harbor-600, #718ba0);
-  color: white;
-}
-.secondary-btn:hover, .secondary-btn:focus-visible,
-.wp-block-button.is-style-secondary-btn .wp-block-button__link:hover,
-.wp-block-button.is-style-secondary-btn .wp-block-button__link:focus-visible {
-  background-color: var(--wp--preset--color--clay-500, #cfc1a7);
-  color: white;
+/* Smooth transition for the default state */
+.primary-btn .wp-block-button__link,
+.secondary-btn .wp-block-button__link {
+  transition: background-color 0.3s ease;
 }
 
 .oikos-section {
@@ -452,19 +409,6 @@ h6 {
   font-weight: 300 900;
   font-display: swap;
 }
-/* Hover */
-.menu-item .wp-block-navigation-item__content:hover > a {
-  color: #c2ae8f;
-}
-
-/* Active */
-.menu-item .wp-block-navigation-item__content.current-menu-item > a,
-.menu-items .wp-block-navigation-item__content.current_page_item > a,
-.menu-items .wp-block-navigation-item__content.current-menu-parent > a,
-.menu-items .wp-block-navigation-item__content.current-menu-ancestor > a {
-  color: #c2ae8f;
-}
-
 @media (max-width: 768px) {
   .contact-button {
     display: none !important;
@@ -473,11 +417,51 @@ h6 {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
+  .stk-block-background:not(.stk--no-padding) {
+    padding: 0;
+  }
+  body.stk--anim-init :is(.stk-block,
+  .stk-container,
+  .stk-container-padding,
+  .stk-img-wrapper,
+  .stk-img-wrapper img,
+  .stk-block-heading__top-line,
+  .stk-block-heading__bottom-line,
+  .stk-block-posts__item-hide,
+  .stk-block-posts__title > a,
+  .stk-button,
+  .stk-button__inner-text,
+  .stk-block li,
+  .stk-block p,
+  .stk-block h1,
+  .stk-block h2,
+  .stk-block h3,
+  .stk-block h4,
+  .stk-block h5,
+  .stk-block h6,
+  .stk-block [class*=__text]) {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
 }
 header.wp-block-template-part {
   position: sticky;
   top: 0;
   z-index: 100; /* Ensures it stays above other content */
+}
+
+/* Change color of the active menu item link */
+.wp-block-navigation .wp-block-navigation-item.current-menu-item > .wp-block-navigation-item__content {
+  color: #c2af91 !important;
+}
+
+/* Change color of menu item links on hover */
+.wp-block-navigation .wp-block-navigation-item__content:hover {
+  color: #c2af91 !important;
+}
+
+.contact-button .wp-block-button__link:hover {
+  background-color: #a3c2ad !important;
 }
 
 /*# sourceMappingURL=main.css.map */

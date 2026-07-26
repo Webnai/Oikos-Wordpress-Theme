@@ -155,17 +155,13 @@
               "fontFamily": "Nunito Sans",
               "fontStyle": "normal",
               "fontWeight": "300 900",
-              "src": [
-                "file:./assets/fonts/NunitoSans-Variable.ttf"
-              ]
+              "src": ["file:./assets/fonts/NunitoSans-Variable.ttf"]
             },
             {
               "fontFamily": "Nunito Sans",
               "fontStyle": "italic",
               "fontWeight": "300 900",
-              "src": [
-                "file:./assets/fonts/NunitoSans-Italic-Variable.ttf"
-              ]
+              "src": ["file:./assets/fonts/NunitoSans-Italic-Variable.ttf"]
             }
           ]
         },

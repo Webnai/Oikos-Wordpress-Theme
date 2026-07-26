@@ -1,55 +1,87 @@
-@use 'abstracts/variables';
-@use 'abstracts/mixins';
-@use 'base/reset';
-@use 'base/typography';
-@use 'base/animations';
-@use 'components/buttons';
-@use 'components/sections';
-@use 'components/images';
-@use 'components/footer';
+@use "abstracts/variables";
+@use "abstracts/mixins";
+@use "base/reset";
+@use "base/typography";
+@use "base/animations";
+@use "components/buttons";
+@use "components/sections";
+@use "components/images";
+@use "components/footer";
 
 @font-face {
-	font-family: 'Nunito Sans';
-	src: url('../fonts/NunitoSans-Variable.ttf') format('truetype');
-	font-style: normal;
-	font-weight: 300 900;
-	font-display: swap;
+  font-family: "Nunito Sans";
+  src: url("../fonts/NunitoSans-Variable.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300 900;
+  font-display: swap;
 }
 
 @font-face {
-	font-family: 'Nunito Sans';
-	src: url('../fonts/NunitoSans-Italic-Variable.ttf') format('truetype');
-	font-style: italic;
-	font-weight: 300 900;
-	font-display: swap;
-}
-
-/* Hover */
-.menu-item .wp-block-navigation-item__content:hover > a {
-    color: #c2ae8f;
-}
-
-/* Active */
-.menu-item .wp-block-navigation-item__content.current-menu-item > a,
-.menu-items .wp-block-navigation-item__content.current_page_item > a,
-.menu-items .wp-block-navigation-item__content.current-menu-parent > a,
-.menu-items .wp-block-navigation-item__content.current-menu-ancestor > a {
-    color: #c2ae8f;
+  font-family: "Nunito Sans";
+  src: url("../fonts/NunitoSans-Italic-Variable.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 300 900;
+  font-display: swap;
 }
 
 @media (max-width: 768px) {
-	.contact-button{
-		display: none !important;
-	}
+  .contact-button {
+    display: none !important;
+  }
 
-	:root :where(.wp-block-group){
-		padding-left: 0 !important;
-		padding-right: 0 !important;
-	}
+  :root :where(.wp-block-group) {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .stk-block-background:not(.stk--no-padding) {
+    padding: 0;
+  }
+
+  body.stk--anim-init
+    :is(
+      .stk-block,
+      .stk-container,
+      .stk-container-padding,
+      .stk-img-wrapper,
+      .stk-img-wrapper img,
+      .stk-block-heading__top-line,
+      .stk-block-heading__bottom-line,
+      .stk-block-posts__item-hide,
+      .stk-block-posts__title > a,
+      .stk-button,
+      .stk-button__inner-text,
+      .stk-block li,
+      .stk-block p,
+      .stk-block h1,
+      .stk-block h2,
+      .stk-block h3,
+      .stk-block h4,
+      .stk-block h5,
+      .stk-block h6,
+      .stk-block [class*="__text"]
+    ) {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
 }
 
 header.wp-block-template-part {
   position: sticky;
   top: 0;
   z-index: 100; /* Ensures it stays above other content */
+}
+
+/* Change color of the active menu item link */
+.wp-block-navigation .wp-block-navigation-item.current-menu-item > .wp-block-navigation-item__content {
+  color: #c2af91 !important;
+}
+
+/* Change color of menu item links on hover */
+.wp-block-navigation .wp-block-navigation-item__content:hover {
+  color: #c2af91 !important;
+}
+
+.contact-button .wp-block-button__link:hover {
+    background-color: #a3c2ad !important;
 }
