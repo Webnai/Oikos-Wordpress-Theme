@@ -16,3 +16,23 @@
 .secondary-btn .wp-block-button__link {
     transition: background-color 0.3s ease;
 }
+
+// /* Target the specific Stackable button block */
+// .stk-block-button.stk-cbd27bb .stk-button.stk--hover-effect-darken:hover,
+// .wp-element-button:hover
+//  {
+//     background-color: transparent !important;
+//     border: 1px solid var(--wp--preset--color--harbor-700, #4E6E88) !important;
+//     color: var(--wp--preset--color--harbor-700, #4E6E88) !important;
+//     transition: background-color 0.3s ease;
+//     margin: 0 !important;
+//     font-weight: 500;
+//     /* Disable the default darken filter effect */
+//     filter: none !important;
+// }
+
+// /* Update the text color inside the button on hover */
+// .stk-block-button.stk-cbd27bb .stk-button.stk--hover-effect-darken:hover .stk-button__inner-text {
+//     color: var(--wp--preset--color--harbor-700, #4E6E88) !important;
+//     transition: background-color 0.3s ease;
+// }

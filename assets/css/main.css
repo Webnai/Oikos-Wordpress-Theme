@@ -320,6 +320,7 @@ h6 {
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
   color: #8b95a3;
+  font-family: "Nunito Sans";
 }
 
 .contact-form textarea {
@@ -416,6 +417,9 @@ h6 {
   :root :where(.wp-block-group) {
     padding-left: 0 !important;
     padding-right: 0 !important;
+  }
+  .mobile-padding {
+    padding: 15px;
   }
   .stk-block-background:not(.stk--no-padding) {
     padding: 0;
